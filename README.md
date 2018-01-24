@@ -10,8 +10,9 @@ Overview of Ruby on Rails:
 `bundle install`: for installing dependencies referenced in Gemfile
 (`bundle update`: for updating dependencies referenced in Gemfile)
 
-## On new project:
-1. Move sqlite3 gem in Gemfile to development.
+## Deploying to Heroku:
+# For initial deployment:
+1. Move sqlite3 gem in Gemfile to development
 2. Add 
 ```ruby
 group :production do
@@ -19,15 +20,11 @@ group :production do
   gem 'rails_12factor'
 end
 ```
-   to end of Gemfile.
+   to end of Gemfile
 3. Run `bundle install --without production`
-
-## Deploying to Heroku
-For first time:
-1. `heroku create`
-2. `git push heroku master`
-3. `heroku run rake db:migrate`
+4. Run `heroku create`
+5. Run `git push heroku master`
+6. Run `heroku run rake db:migrate`
    OR
-   `heroku run rails db:migrate`
+   Run`heroku run rails db:migrate`
 
-   
