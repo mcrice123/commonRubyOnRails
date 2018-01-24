@@ -49,6 +49,6 @@ Run `heroku rename new-name`
    - Running `rake routes` or `rails routes` shows the available routes, including the new ones created by this line
  - In '/app/controllers', a new file called 'examples_controller.rb' is added and it contains all CRUD (create, read, update, destroy) methods
 
-# To destroy scaffold:
+### To destroy scaffold:
 `rails destroy scaffold Example`
- 
+
