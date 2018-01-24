@@ -48,6 +48,7 @@ Run `heroku rename new-name`
  - In '/app/config/routes.rb', the line `resources :examples` is added near the top of the file
    - Running `rake routes` or `rails routes` shows the available routes, including the new ones created by this line
  - In '/app/controllers', a new file called 'examples_controller.rb' is added and it contains all CRUD (create, read, update, destroy) methods
+ - In '/app/views', a new folder called 'examples' is created and inside it, various html.erb files are created by default. 
 
 ### To destroy scaffold:
 `rails destroy scaffold Example`
