@@ -18,6 +18,7 @@ group :production do
   gem 'pg'
 end
 ```
+   to end of Gemfile.
 3. Run `bundle install --without production`
 
 
