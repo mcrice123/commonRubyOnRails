@@ -35,7 +35,7 @@ end
 ### To change name of heroku app's url:
 Run `heroku rename new-name`
 
-## To create new model:
+## To create new table:
 1. Run `rails generate scaffold Example title:string description:text foreign_key:references`
 2. Run `rake db:migrate` OR `rails db:migrate` to create the table 
  - In '/db', new 'schema.rb' is added if none there previously OR 'schema.rb' is updated
@@ -51,6 +51,11 @@ Run `heroku rename new-name`
 
 ### To destroy scaffold:
 `rails destroy scaffold Example`
+
+## To build existing table:
+1. Run `rails generate migration create_or_add_example`
+ - Creates new migration file in '/db/migrate'
+2. 
 
 # Case Check
 ## The following rules must be kept in regards to names:
