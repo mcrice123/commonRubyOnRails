@@ -1,4 +1,4 @@
-### Common Ruby on Rails commands
+# Common Ruby on Rails commands
 
 This repo stores some useful notes to myself to help me remember how to code in Ruby on Rails. 
 
@@ -11,7 +11,7 @@ Overview of Ruby on Rails:
 (`bundle update`: for updating dependencies referenced in Gemfile)
 
 ## Deploying to Heroku:
-# For initial deployment:
+### For initial deployment:
 1. Move sqlite3 gem in Gemfile to development
 2. Add 
 ```ruby
@@ -32,6 +32,6 @@ end
    Run`heroku run rails db:migrate`
 10. Check to see if deployment worked at url given
 
-# To change name of heroku app's url:
+### To change name of heroku app's url:
 Run `heroku rename new-name`
 
