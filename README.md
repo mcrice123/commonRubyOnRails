@@ -24,8 +24,10 @@ end
 3. Run `bundle install --without production`
 4. Create Heroku account, if not already done: [See Heroku Instructions](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction)
 5. Run `heroku create`
-6. Run `git push heroku master`
-7. Run `heroku run rake db:migrate`
+6. Run `git add .`
+7. Run `git commit -m "pushing changes for deployment"`
+8. Run `git push heroku master`
+9. Run `heroku run rake db:migrate`
    OR
    Run`heroku run rails db:migrate`
 
