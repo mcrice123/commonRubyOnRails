@@ -30,4 +30,8 @@ end
 9. Run `heroku run rake db:migrate`
    OR
    Run`heroku run rails db:migrate`
+10. Check to see if deployment worked at url given
+
+# To change name of heroku app's url:
+Run `heroku rename new-name`
 
