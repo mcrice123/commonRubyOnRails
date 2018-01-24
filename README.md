@@ -52,3 +52,10 @@ Run `heroku rename new-name`
 ### To destroy scaffold:
 `rails destroy scaffold Example`
 
+# Case Check
+## The following rules must be kept in regards to names:
+1. Model name: Singular, First letter uppercase ('Example')
+2. Table name: Plural, lower case of model name ('examples')
+3. Model name filename: All lowercase, but singular ('example.rb')
+4. Controller name: plural of model ('examples_conroller.rb')
+
