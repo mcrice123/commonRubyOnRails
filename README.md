@@ -10,7 +10,7 @@ Overview of Ruby on Rails:
 `bundle install`: for installing dependencies referenced in Gemfile
 (`bundle update`: for updating dependencies referenced in Gemfile)
 
-On new project:
+## On new project:
 1. Move sqlite3 gem in Gemfile to development.
 2. Add 
 ```ruby
@@ -21,4 +21,12 @@ end
    to end of Gemfile.
 3. Run `bundle install --without production`
 
+## Deploying to Heroku
+For first time:
+1. `heroku create`
+2. `git push heroku master`
+3. `heroku run rake db:migrate`
+   OR
+   `heroku run rails db:migrate`
 
+   
