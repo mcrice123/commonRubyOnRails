@@ -35,3 +35,20 @@ end
 ### To change name of heroku app's url:
 Run `heroku rename new-name`
 
+## To create new model:
+1. Run `rails generate scaffold Example title:string description:text foreign_key:references`
+2. Run `rake db:migrate` OR `rails db:migrate` to create the table 
+ - In '/db', new 'schema.rb' is added if none there previously OR 'schema.rb' is updated
+ - In '/db/migrate', a new migration file is added
+ - In '/app/models', a new file called 'example.rb' is added that looks like this:
+ ```ruby
+ class Example < ApplicationRecord
+ end
+ ```
+ - In '/app/config/routes.rb', the line `resources :examples` is added near the top of the file
+   - Running `rake routes` or `rails routes` shows the available routes, including the new ones created by this line
+ - In '/app/controllers', a new file called 'examples_controller.rb' is added and it contains all CRUD (create, read, update, destroy) methods
+
+# To destroy scaffold:
+`rails destroy scaffold Example`
+ 
